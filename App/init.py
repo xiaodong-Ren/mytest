@@ -4,7 +4,7 @@ from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
 from config import basedir
 
-app = Flask(__name__) # 做个测试
+app = Flask(__name__) 
 app.config.from_object("config") # 载入配置文件
 db = SQLAlchemy(app) # 初始化 db 对象
 
